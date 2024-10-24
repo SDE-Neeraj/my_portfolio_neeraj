@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Neeraj Singh</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<body class="bg-stone-200">
+
+<body class="font-serif bg-stone-100">
+    <!-- Header Section -->
     <header class="flex justify-between items-center bg-gray-600 p-4 fixed w-full top-0 z-10">
         <h1 class="text-white text-3xl flex items-center">
-            <img src="assets\my_sign3.png" alt="Neeraj Singh" class="h-14 mr-2">
-            <!-- The alt text is shown if the image can't load -->
+            <img src="assets/my_sign3.png" alt="Neeraj Singh" class="h-14 mr-2" />
         </h1>
         <nav class="mt-2">
             <ul class="flex space-x-4">
@@ -20,8 +23,52 @@
             </ul>
         </nav>
     </header>
-    <main class="h-screen bg-stone-200 pt-20">
-        <h1>getto</h1>
+
+    <!-- Main Content Section -->
+    <main class="h-screen pt-20">
+        <!-- Cover Image -->
+        <img src="assets/my_sign3.png" alt="Cover Image" class="absolute bottom-10 right-10 w-48 h-20 object-cover opacity-30 z-0">
+
+        <!-- Section 1st  -->
+        <div class="flex h-full w-full">
+
+            <div class="basis-3/5 flex flex-col">
+                <h2 id="typewriter" class="text-6xl pt-[20%] px-16 break-words text-gray-800 font-semibold"></h2>
+                <p class="px-16 pt-5 text-xl">
+                    Currently working full-time as a Software Developer at Webfort
+                    Technologies
+                </p>
+                <div class="flex space-x-4 px-16 pt-5">
+                    <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
+                        class="text-gray-800 hover:text-blue-600">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/your-github" target="_blank" class="text-gray-800 hover:text-gray-600">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </div>
+                <!-- Download Resume Button -->
+                <div class="px-16 pt-5">
+                    <a href="#_" class="relative inline-block px-4 py-2 font-medium group">
+                        <span
+                            class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                        <span
+                            class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                        <span class="relative text-black group-hover:text-white">🡫 Download Resume</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="basis-2/5 flex items-center justify-center">
+                <img src="assets/my_picture.jpg" alt="Neeraj Singh" class="rounded-full w-3/4 h-auto shadow-lg" />
+            </div>
+        </div>
+
+        <!-- Section 2nd  -->
     </main>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
