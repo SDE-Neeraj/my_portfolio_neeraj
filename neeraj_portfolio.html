@@ -17,7 +17,7 @@
         </h1>
         <nav class="mt-2">
             <ul class="flex space-x-4">
-                <li><a href="#" class="text-white hover:underline">Home</a></li>
+                <li><a href="#about" class="text-white hover:underline">Home</a></li>
                 <li><a href="#" class="text-white hover:underline">About</a></li>
                 <li><a href="#" class="text-white hover:underline">Contact</a></li>
             </ul>
@@ -25,13 +25,13 @@
     </header>
 
     <!-- Main Content Section -->
-    <main class="h-screen pt-20">
+    <main class="h-screen px-16 pt-20">
         <!-- Cover Image -->
-        <img src="assets/my_sign3.png" alt="Cover Image" class="absolute bottom-10 right-10 w-48 h-20 object-cover opacity-30 z-0">
+        <img src="assets/my_sign3.png" alt="Cover Image"
+            class="fixed bottom-10 right-10 w-48 h-20 object-cover opacity-30 z-0" />
 
-        <!-- Section 1st  -->
+        <!-- Hero Section  -->
         <div class="flex h-full w-full">
-
             <div class="basis-3/5 flex flex-col">
                 <h2 id="typewriter" class="text-6xl pt-[20%] px-16 break-words text-gray-800 font-semibold"></h2>
                 <p class="px-16 pt-5 text-xl">
@@ -64,11 +64,191 @@
             </div>
         </div>
 
-        <!-- Section 2nd  -->
+        <!-- About Section -->
+        <section id="about" class="py-10">
+            <div class="flex flex-wrap items-center container mx-auto">
+                <!-- Image Section -->
+                <div class="w-full md:w-4/12 p-8">
+                    <div class="bg-blue-500 rounded-lg p-6 shadow-lg transition-transform transform hover:scale-105">
+                        <img src="assets/my_sign3.png" alt="Neeraj Singh"
+                            class="w-full h-full object-cover rounded-md" />
+                    </div>
+                </div>
+
+                <!-- About Text Section -->
+                <div class="w-full md:w-8/12 px-8">
+                    <h2 class="text-4xl font-bold text-gray-600 mb-4">About Me</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        As a dedicated software developer with a background in Computer
+                        Science, I have honed my problem-solving and coding skills through
+                        academic projects and professional work. My internships and
+                        subsequent roles have given me hands-on experience with various
+                        technologies. I am a fast learner who enjoys tackling new
+                        challenges and am confident that my technical skills and
+                        dedication will contribute to your organization's success.
+                    </p>
+                    <!-- Download Resume Button -->
+                    <div class="px-16 pt-5">
+                        <a href="#_" class="relative inline-block px-4 py-2 font-medium group">
+                            <span
+                                class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                            <span
+                                class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                            <span class="relative text-black group-hover:text-white">More About Me</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3rd: My Projects -->
+        <section id="projects" class="py-16 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h4 class="text-7xl font-bold text-gray-600 mb-10">MY PROJECTS</h4>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+                    <div
+                        class="bg-white bg-opacity-90 shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-2xl hover:shadow-gradient">
+                        <h6 class="text-2xl font-semibold text-gray-600">Counterdraw</h6>
+                        <p class="text-gray-600 mb-4">
+                            Project aimed at the stone industry
+                        </p>
+                        <ul class="list-disc list-inside text-left text-gray-700">
+                            <li>Developed main coding part including WordPress APIs.</li>
+                            <li>Managed front end with Vue.js.</li>
+                            <li>
+                                Collaborated with a senior developer on design and testing.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-2xl hover:shadow-gradient">
+                        <h6 class="text-2xl font-semibold text-gray-600">
+                            Project 2 Title
+                        </h6>
+                        <p class="text-gray-600 mb-4">
+                            Brief description of the second project.
+                        </p>
+                        <ul class="list-disc list-inside text-left text-gray-700">
+                            <li>Key contribution or role in the project.</li>
+                            <li>Technologies used and any significant achievements.</li>
+                            <li>Collaboration details or team structure.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+
+        <!-- Section 4th  in cards -->
+        
+        <div class="flex justify-center space-x-16 my-12">
+            <!-- Workflow Builder Section -->
+            <div>
+                <h2 class="text-gray-600 font-semibold text-lg mb-4">
+                    Workflow Builder
+                </h2>
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute top-0 left-4 w-1 h-full bg-gray-200"></div>
+                    <!-- Workflow Builder Item -->
+                    <div class="relative pl-12 pb-8">
+                        <div class="absolute left-2.5 top-5 w-4 h-4 rounded-full bg-gray-500"></div>
+                        <div class="p-10 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+                            <p class="text-sm text-gray-600">2018 - 2022</p>
+                            <h3 class="text-md font-semibold">
+                                A business management software developed using Vue, PHP, REST
+                                APIs, and server management tools like FileZilla and WinSCP.
+                            </h3>
+
+                            <ul style="list-style-type: disc">
+                                <li>
+                                    Developed a workflow builder to manage tasks for companies
+                                    and their users.
+                                </li>
+                                <li>
+                                    Enabled creation of "journeys" with defined steps used as
+                                    templates for project creation.
+                                </li>
+                                <li>
+                                    Set up automated task generation for users based on journey
+                                    steps:
+                                    <ul style="list-style-type: disc; margin-left: 20px">
+                                        <li>Each task is assigned to a specific user.</li>
+                                        <li>
+                                            Users perform actions and update the system upon task
+                                            completion.
+                                        </li>
+                                        <li>
+                                            The next task in the sequence is generated for the next
+                                            user once a task is completed.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Implemented task filtering to allow users to view only their
+                                    assigned tasks.
+                                </li>
+                                <li>
+                                    Included report management for viewing journey summaries and
+                                    detailed step-by-step updates.
+                                </li>
+                                <li>
+                                    Handled main coding aspects, including WordPress API
+                                    integrations.
+                                </li>
+                                <li>Managed the front end using Vue.js.</li>
+                                <li>
+                                    Collaborated with a senior developer on design and testing.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Add more Workflow Builder items as needed -->
+                </div>
+                
+            </div>
+
+            <!-- Experience Section -->
+            <div>
+                <h2 class="text-gray-600 font-semibold text-lg mb-4">EXPERIENCE</h2>
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute top-0 left-4 w-1 h-full bg-gray-200"></div>
+                    <!-- Experience Item -->
+                    <div class="relative pl-12 pb-8">
+                        <div class="absolute left-2.5 top-5 w-4 h-4 rounded-full bg-gray-500"></div>
+                        <div class="p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+                            <p class="text-sm text-gray-600">2018 - 2022</p>
+                            <h3 class="text-md font-semibold">UI/UX Designer</h3>
+                            <p class="text-sm text-gray-600">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Add more experience items as needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5th -->
+        <div></div>
+        <!-- Section 6th -->
+        <div>
+            <h6>Educational Details</h6>
+            <!-- Educational details -->
+        </div>
     </main>
 
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
+    <script src="style.css"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-const text = "I'm Neeraj Singh, Architect & Software Developer.";
+const text = "Hi, I'm Neeraj Singh. Software Developer.";
 const typewriterElement = document.getElementById('typewriter');
 let index = 0;
 
